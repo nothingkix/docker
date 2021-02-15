@@ -2,7 +2,7 @@
 
 # Docker Container für dein Homelab
 
-Dieses Repository ist eine Sammlung von Docker-Compose Dateien für Homelabs. Als Betreiber eines [YouTube Kanals](https://youtube.com/teqqyde) das sich rund um das Thema Homelab beschäftigt, habe ich mir die Arbeit gemacht, um dir einen kleinen Start in Sachen Docker zu geben. 
+Dieses Repository ist eine Sammlung von Docker-Compose Dateien. 
 
 ## Aufbau
 Jedes Verzeichnis enthält nur eine Software. Es lassen sich natürlich auch mehrere Produkte miteinander kombinieren um so die Anzahl an docker-compose.yaml Dateien zu verringern. Sollte eine Software eine Datenbank oder ähnliches benötigten, ist diese natürlich in der entsprechenden compose Datei enthalten.
@@ -16,37 +16,18 @@ Im Laufe der Zeit können sich Produkte ändern oder nicht mehr durch die Entwic
 
 # Software
 Alphabetisch sortiert
-## A
-* apt-cacher-ng (https://wiki.debian.org/AptCacherNg)
 
 ## B
 * Bitwarden_rs (https://github.com/dani-garcia/bitwarden_rs)
-* Bookstack (https://www.bookstackapp.com)
 
 ## C
-* Calibre (incl. Calibre-Web) (https://calibre-ebook.com)
 * Cloudflare-ddns
 
-## D
-* Drone.io (https://drone.io)
-
-## F
-* FreshRSS (https://freshrss.org)
-
-## G
-* Gitea (https://gitea.io)
-* Guacamole (http://guacamole.apache.org)
-
-## H
-* Heimdall (https://heimdall.site)
 
 ## I
-* ilias (https://www.ilias.de)
 * influxdb (https://www.influxdata.com/products/influxdb/)
 
 ## M
-* Matomo (https://matomo.org)
-* Miniflux (Miniflux is a minimalist and opinionated feed reader. https://miniflux.app)
 * Monitoring (Node Exporter, Prometheus, cAdvisor, Grafana)
 
 ## N
@@ -54,23 +35,8 @@ Alphabetisch sortiert
 * NTP Server
 
 ## P
-* phpIPAM (https://phpipam.net)
 * Pi-hole (https://pi-hole.net)
-* PLEX Medien Server (https://www.plex.tv)
 * Portainer (https://www.portainer.io)
 
-## R
-* Redmine (https://www.redmine.org)
-
-## S
-* Statping (https://demo.statping.com)
-
 ## T
-* Tautulli (https://tautulli.com)
 * Traefik (https://traefik.io)
-
-## W
-* Wallabag (https://www.wallabag.it/de/)
-* Watchtower (https://github.com/containrrr/watchtower)
-* Wiki.js (https://wiki.js.org)
-* Wordpress (https://de.wordpress.org)
