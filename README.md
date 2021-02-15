@@ -1,3 +1,25 @@
+Installationsanleitung Raspberry Pi 4+
+
+ 1. Download Raspberry OS Image
+ 2. Create empty SSH file in root of SD card
+	  sudo apt-get update
+	  sudo apt-get upgrade -y
+
+ 1. sudo apt install curl
+ 2. sudo curl -fsSL https://get.docker.com -o get-docker.sh
+ 3. sudo sh get-docker.sh
+ 4. sudo apt install python-pip -y
+ 5. sudo pip install docker-compose
+ 6. sudo apt install git -y
+ 7. sudo git clone https://github.com/nothingkix/docker
+ 8. sudo rm get-docker.sh
+
+ 6. sudo docker pull portainer/portainer
+ 7. sudo docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock --restart always --name portainer portainer/portainer -H unix:///var/run/docker.sock
+ 
+ Aufruf über Webbrowser: http://raspberry.local:9000
+
+
 # Docker Container
 
 Dieses Repository ist eine Sammlung von Docker-Compose Dateien. 
