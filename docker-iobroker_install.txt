@@ -1,5 +1,3 @@
-docker create network smarthome
-
 iobroker:
   restart: always
   image: buanet/iobroker:latest
@@ -9,4 +7,4 @@ iobroker:
     - "8081:8081"
   volumes:
     - iobrokerdata:/opt/iobroker
-  command: --network=smarthome
+  command: --network=bridge
