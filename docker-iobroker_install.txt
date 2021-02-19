@@ -1,0 +1,12 @@
+docker create network smarthome
+
+iobroker:
+  restart: always
+  image: buanet/iobroker:latest
+  container_name: iobroker
+  hostname: iobroker
+  ports:
+    - "8081:8081"
+  volumes:
+    - iobrokerdata:/opt/iobroker
+  command: --network=smarthome
