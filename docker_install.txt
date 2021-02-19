@@ -4,7 +4,7 @@
 
 3. sudo sh get-docker.sh
 
-4. sudo usermod -aG docker Pi
+4. sudo usermod -aG docker pi
 
 5. docker version
 
