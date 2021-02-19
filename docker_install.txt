@@ -1,0 +1,17 @@
+1. sudo apt-get update && sudo apt-get upgrade
+
+2. curl -fsSL https://get.docker.com -o get-docker.sh
+
+3. sudo sh get-docker.sh
+
+4. sudo usermod -aG docker Pi
+
+5. docker version
+
+6. docker info
+
+7. docker run hello-world
+
+
+
+
