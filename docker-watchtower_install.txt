@@ -6,7 +6,7 @@
 
 watchtower:
   container_name: watchtower
-  restart: always
+  restart: unless-stopped
   image: containrrr/watchtower
   environment:
     - WATCHTOWER_NOTIFICATIONS=email
@@ -18,6 +18,5 @@ watchtower:
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock
   command: --intervall 8600 --cleanup
-restart: unless-stopped
 
 4. docker-compose up -d
