@@ -1,0 +1,16 @@
+1. mkdir watchtower
+
+2. cd watchtower
+
+3. nano docker-compose.yml
+
+
+watchtower
+	container_name: watchtower
+	image: container/watchtower:latest
+	volumes:
+		- /var/run/docker.sock:/var/run/docker.sock
+	command: --intervall 8600 --cleanup
+	restart: unless-stopped
+
+4. docker-compose up -d
