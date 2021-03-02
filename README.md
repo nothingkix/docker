@@ -16,6 +16,10 @@ Installationsanleitung Raspberry Pi 4+
 
  6. sudo docker pull portainer/portainer
  7. sudo docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock --restart always --name portainer portainer/portainer -H unix:///var/run/docker.sock
+
+NextCloudPi:
+docker run -d -p 4443:4443 -p 443:443 -p 8080:80 -v /mnt/<USB/HDD-Mountpoint>/ncdata:/data --restart unless-stopped --name nextcloudpi ownyourbits/nextcloudpi <IP-ADDRESS-RASPBERRYPI>
+
  
  Aufruf über Webbrowser: http://raspberry.local:9000
 
